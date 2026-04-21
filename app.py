@@ -10,7 +10,7 @@ st.set_page_config(page_title="PDF Q&A System", layout="wide")
 st.title("RAG Document Intelligence System")
 st.caption("Upload PDFs and ask questions about them")
 
-os.environ["GROQ_API_KEY"] = st.secrets["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"]
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 client = Groq()
 
 def load_pdfs(uploaded_files):
